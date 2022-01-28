@@ -1,8 +1,6 @@
 import json
-import os
+
 import munch
-import random
-import numpy as np
 
 
 def get_config_from_json(json_file):
@@ -23,5 +21,3 @@ def process_config(jsonfile):
     config = munch.Munch(config_dict)
     config.test = munch.Munch(config.test)
     return config
-
-
